@@ -195,3 +195,13 @@ SOFTWARE.
 ```
 heroku config:set -a color-parse CORSANYWHERE_RATELIMIT = "200 1"
 ```
+
+## HOW TO SETUP
+```
+git clone https://github.com/Rob--W/cors-anywhere
+cd cors-anywhere
+heroku login
+heroku create host-name
+heroku config:set -a host-name CORSANYWHERE_RATELIMIT="200 1"
+git push heroku master
+```
